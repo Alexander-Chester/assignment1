@@ -1,0 +1,42 @@
+package worlds;
+import stanford.karel.*;
+
+public class Assignment1 extends Karel {
+
+	public void checkBallot() {
+		 if (frontIsClear()) {
+			 move();
+			 checkMiddle();
+		 }
+		
+	}
+	private void checkMiddle() {
+		if(beepersPresent()) {
+			move();
+			checkBallot();
+		
+			
+		}
+		else {
+			turnLeft();
+			move();
+			checkTop();
+				
+		}
+	}
+	private void checkTop() {
+		if(beepersPresent()) {
+			pickBeeper();
+			moveToBottom();
+			}
+		else {
+			moveToBottom();
+		}
+		}
+	private void moveToBottom() {
+		for (int i = 1; i<3; i++)
+		
+		}
+	}
+
+}

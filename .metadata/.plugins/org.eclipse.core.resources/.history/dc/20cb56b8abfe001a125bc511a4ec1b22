@@ -1,0 +1,10 @@
+package worlds;
+import stanford.karel.*;
+
+public class Assignment1 {
+
+	public void run() {
+		move();
+	}
+
+}
